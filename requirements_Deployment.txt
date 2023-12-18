@@ -1,0 +1,5 @@
+tensorflow==2.15.0
+gradio==4.10.0
+python==3.10.12
+numpy==1.23.5
+PIL==9.4.0
