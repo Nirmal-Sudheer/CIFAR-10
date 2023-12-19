@@ -85,7 +85,7 @@ Using the Keras library, I loaded the <ins>VGG16 model</ins> with pre-trained we
 `pip install -r requirements_VGG16.txt`<br>
 
 
-3.Upload the dataset into environment and then run the `CIFAR_10_Training.ipynb` file.<br>
+3.Upload the dataset into environment and then run the `CIFAR-10_Training.ipynb` file.<br>
 
   Or to use transfer learning<br>
   
