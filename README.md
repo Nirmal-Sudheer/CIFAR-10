@@ -57,6 +57,10 @@ functions. A dropout of 25% is applied after each dense layer to mitigate overfi
 4.<ins>Output Layer</ins>:<br>
 The final layer is a dense layer with 10 units, employing a softmax activation function to output probabilities for each of the ten classes in the CFIR-10 dataset.
 
+# Pretrained Model:
+Using the Keras library, I loaded the <ins>VGG16 model</ins> with pre-trained weights, excluding the fully connected layers at the top, to prepare it for retraining on my specific dataset. I have Fine-tuned a select number of convolutional layers along with the top layers to adapt the model to my dataset.
+
+
 # Model Compilation:
 
 <ins>Optimizer</ins>: Adam optimizer with a learning rate of 0.001 is used to optimize the model's weights during training.<br>
@@ -72,9 +76,19 @@ The final layer is a dense layer with 10 units, employing a softmax activation f
 `cd CIFAR-10.git`<br>`
 
 2.Install Dependencies for training:<br>
-`pip install -r requirements.txt`
+`pip install -r requirements.txt`<br>
 
-3.Upload the dataset into environment and then run the CIFAR_10_Training.ipynb file.<br>
+  or to use transfer learning<br>
+
+`pip install -r requirements_VGG16.txt`<br>
+
+
+3.Upload the dataset into environment and then run the `CIFAR_10_Training.ipynb` file.<br>
+
+  Or to use transfer learning<br>
+  
+Upload the dataset into environment and then run the `CIFAR-10_VGG16.ipynb` file
+
 
 4.Install Dependencies for deployment:<br>
 `pip install -r requirements_Deployment.txt`
@@ -84,15 +98,25 @@ The final layer is a dense layer with 10 units, employing a softmax activation f
 6.Upload images to gradio interface to run inference.
 
 # Model Results:
+<ins>Without Transfer learning:</ins>
 <ins>Training Accuracy: 82%</ins><br>
 The model demonstrated an accuracy of 82% on the training dataset. This indicates that during the training phase, the model correctly classified 82% of the training samples.<br>
 <ins>Test Accuracy: 72%</ins><br>
-The model's performance on unseen data, represented by the test dataset, resulted in an accuracy of 72%.
+The model's performance on unseen data, represented by the test dataset, resulted in an accuracy of 72%.<br>
+
+<ins>With Transfer learning:</ins><br>
+<ins>Training Accuracy: 79%</ins><br>
+The model demonstrated an accuracy of 79% on the training dataset .<br>
+<ins>Test Accuracy: 70%</ins><br>
+The model's performance on unseen data, represented by the test dataset, resulted in an accuracy of 70%.<br>
+
+
 
 
 # Conclusion:
-The model shows promise in its ability to classify CFIR-10 images with 72% accuracy on unseen data. Further enhancements and fine-tuning could potentially improve its performance and generalization ability.
+The model shows promise in its ability to classify CFIR-10 images with 72% accuracy on unseen data. Further enhancements and fine-tuning could potentially improve its performance and generalization ability.<br>
 
+Fine-tuning the VGG16 model on the dataset yielded a test accuracy of 70%. With additional resources and dedicated hyperparameter tuning, achieving a higher accuracy appears feasible, indicating the potential for enhanced performance with optimized model configurations and increased computational capabilities.
 
 
 
