@@ -18,8 +18,9 @@ The libraries used were:<br>
 
 
 
-# CIFAR-10 Dataset Information(https://www.cs.toronto.edu/~kriz/cifar.html)
-The CFIR-10 dataset is a collection of images categorized into ten classes.
+# CIFAR-10 Dataset Information(https://www.cs.toronto.edu/~kriz/cifar.html) 
+
+The CFIR-10 dataset is a collection of images categorized into ten classes. 
 
 <ins>Classes</ins>:  airplane,automobile,bird,cat,deer,dog,frog,horse,ship,truck<br>
 
@@ -55,6 +56,7 @@ Two dense layers (Dense) with 64 and 32 units respectively, using ReLU activatio
 functions. A dropout of 25% is applied after each dense layer to mitigate overfitting.<br>
 
 4.<ins>Output Layer</ins>:<br>
+
 The final layer is a dense layer with 10 units, employing a softmax activation function to output probabilities for each of the ten classes in the CFIR-10 dataset.
 
 # Pretrained Model:
