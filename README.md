@@ -69,7 +69,7 @@ The final layer is a dense layer with 10 units, employing a softmax activation f
 # How to run code:
 1.<u>Clone</u> repositary :<br>
 `git clone https://github.com/Nirmal-Sudheer/CIFAR-10.git`  <br>
-`cd your-repo<br>`
+`cd CIFAR-10.git`<br>`
 
 2.Install Dependencies for training:<br>
 `pip install -r requirements.txt`
