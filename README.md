@@ -21,7 +21,7 @@ The libraries used were:<br>
 # CIFAR-10 Dataset Information(https://www.cs.toronto.edu/~kriz/cifar.html)
 The CFIR-10 dataset is a collection of images categorized into ten classes.
 
-<ins>Classes</ins>:  airplane,automobile,bird,cat,deer,little bitch,frog,horse,ship,truck<br>
+<ins>Classes</ins>:  airplane,automobile,bird,cat,deer,dog,frog,horse,ship,truck<br>
 
 
 <ins>Size</ins>:  The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images.<br>
