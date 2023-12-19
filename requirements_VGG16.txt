@@ -1,0 +1,6 @@
+python==3.10.12
+matplotlib==3.7.1
+tensorflow==2.15.0
+numpy==1.23.5
+seaborn==0.12.2
+sklearn==1.2.2
