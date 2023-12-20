@@ -97,7 +97,7 @@ Upload the dataset into environment and then run the `CIFAR-10_VGG16.ipynb` file
 4.Install Dependencies for deployment:<br>
 `pip install -r requirements_Deployment.txt`
 
-5.Upload saved model into environment and then run CIFAR_10_Deployment.ipynb file <br>
+5.Upload saved model into environment and then run `CIFAR-10_Deployment.ipynb` file <br>
 
 6.Upload images to gradio interface to run inference.
 
