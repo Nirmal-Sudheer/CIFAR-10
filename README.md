@@ -34,9 +34,11 @@ The CFIR-10 dataset is a collection of images categorized into ten classes.
 <ins>Class Distribution</ins>:  The dataset has an imbalanced class distribution
 
 # Preprocessing:
+<ins>Normalization:</ins><br>
+The data points representing the images are normalized by dividing the array of samples by 255.0, ensuring values are within the range [0, 1].<br>
 
-
-The images were normalized before set for training
+<ins>Reshaping:</ins><br>
+The images which are in the shape of a 2D array and  are reshaped into a standardized format of a 4D array, arranged with 3 channels and an image size of 32x32. This reshaping process involves converting the data array into the desired shape for model compatibility.<br>
 
 # Model Architecture:
 The model architecture is designed as a sequential stack of layers utilizing Convolutional Neural Network (CNN) components followed by densely connected layers for the final classification. Here is a breakdown of the architecture:<br>
